@@ -81,22 +81,14 @@ th {
 	padding-left: 10px;
 	/*padding-bottom: 10px;*/
 }
-.header{
-	border: 1px;
-	border-bottom: solid;
-	border-color: #aaa;
-	border-width: 100%;
-	padding-top: 10px;
-	box-shadow: 10px 10px 5px #aaa;
-}
 .head-title{
-	/*float:left;*/
+	float:left;
 	font-weight: bold;
 	font-size: 35px;
-	/*padding-bottom: 100px;*/
  	text-shadow: -3px 0 4px #006;
 }
 .head-title-t{
+	float: left;
 	font-weight: bold;
 	font-size: 35px;
 	color: #d1f442;
@@ -109,7 +101,16 @@ th {
 	padding-right: 15px;
 	word-spacing: 20px;
 	font-size: 18px;
-
+}
+.index-header{
+	border:1px;
+	border-bottom: : solid;
+	border-color: #aaa;
+	padding: 30px;
+	text-align: right;
+	border-width: 100%;
+	box-shadow: 10px 10px 5px #aaa;
+	word-spacing: 25px;
 }
 .space{
 	border-style: solid;
@@ -150,20 +151,6 @@ th {
 	border-radius: 5px;
 	border-color: #aaa;
 }
-input.dcheckbox{
-	width: 30px;
-  	height: 30px; 	
-	box-sizing: border-box;
-	padding: 10px;
-	border:2px solid #e9eaea;
-	color: #3e3e40;
-	font-size: 10px;
-	outline: none;
-	border-radius: 5px;
-    cursor: pointer;
-    -webkit-appearance: none;
-    appearance: none;
-}
 .adminspace{
 	padding-top: 0%;
 	float: right;
@@ -193,4 +180,15 @@ button.accbut{
 }
 a.linx{
 	font-style: normal;
+}
+.index_container{
+	border: 1px;
+	border-style: solid;
+	border-color: #aaa;
+	border-radius: 3px;
+	text-align: center;
+	margin:auto;
+	width: 800px;
+	padding: 150px;
+	background-color: #ffffff;	
 }
