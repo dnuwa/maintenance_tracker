@@ -80,7 +80,7 @@ class Maintenance(Resource):
             return {"error": "request not found"}
         return req
 
-api.add_resource(HelloWorld, '/')
+#api.add_resource(HelloWorld, '/')
 api.add_resource(UserCollection, '/users')
 
 api.add_resource(MaintenanceRequests, '/user/request')
