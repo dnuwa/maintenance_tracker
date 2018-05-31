@@ -6,7 +6,7 @@ app = Flask(__name__)
 api= Api(app, prefix="/api/v1")
 
 app_users = [
-    {"email":"daniel.nuwa@gmail.com", "password":"1234", "id": 1}
+    {"email":"daniel.nuwa@gmail.com", "password":"1234", "id": 1},{"email":"danielnuwa84@gmail.com", "password":"65426", "id": 2}
 ]
 
 main_req = [ 
@@ -31,16 +31,16 @@ mainreq_request_parser.add_argument("issue_details", type=str, required=True, he
 mainreq_request_parser.add_argument("status", required=True)
 mainreq_request_parser.add_argument("id", type=int, required=True, help="Please enter valid integer as ID")
 
-#test class
-class HelloWorld(Resource):
-    def get(self):
-        return {'hello': 'world'}
+# #test class
+# class HelloWorld(Resource):
+#     def get(self):
+#         return {'hello': 'world'}
 #users class
 class UserCollection(Resource):
     #method to get all users signed up
     def get(self):
         for one in app_users:
-            return app_users
+            return one
 
     #method to cater for user sign up
     def post(self):
@@ -59,7 +59,7 @@ class MaintenanceRequests(Resource):
     #method to fetch all the requests
     def get(self):
         for one in main_req:
-            return main_req
+            return one
 
 #class to make updates on the requests
 class Maintenance(Resource):
@@ -77,7 +77,7 @@ class Maintenance(Resource):
     def get(self, id):
         req = get_item_by_id(id)
         if not req:
-            return {"error": "User not found"}
+            return {"error": "request not found"}
         return req
 
 api.add_resource(HelloWorld, '/')
