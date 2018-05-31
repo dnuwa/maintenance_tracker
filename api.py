@@ -46,7 +46,7 @@ class UserCollection(Resource):
     def post(self):
         args = user_request_parser.parse_args()
         app_users.append(args)
-        return {"msg": "User added", "user_data": args}
+        return {"msg": "User added", "user_data": args}, 201
 
 #requests class
 class MaintenanceRequests(Resource):
@@ -55,7 +55,8 @@ class MaintenanceRequests(Resource):
     def post(self):
         arguments = mainreq_request_parser.parse_args()
         main_req.append(arguments)
-        return {"msg": "Request added", "Request_data": arguments}
+        return {"msg": "Request added", "Request_data": arguments}, 201
+        
     #method to fetch all the requests
     def get(self):
         for one in main_req:
