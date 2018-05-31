@@ -7,4 +7,7 @@ python:
 script: 
 
   - python test_api.py
- 
+  
+  addons:
+    apt:
+      update: true

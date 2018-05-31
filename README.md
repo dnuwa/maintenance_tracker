@@ -19,10 +19,4 @@ To contribute to this application by first cloning it to your local machine.
 git clone https://github.com/dnuwa/maintenance_tracker.git
 cd maintenance_tracker
 ```
-[![Build Status](https://travis-ci.org/dnuwa/maintenance_tracker.svg?branch=master)](https://travis-ci.org/dnuwa/maintenance_tracker)
-
-[![Coverage Status](https://coveralls.io/repos/github/dnuwa/maintenance_tracker/badge.svg?branch=master)](https://coveralls.io/github/dnuwa/maintenance_tracker?branch=master)
-
-[![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
-
-[![Test Coverage](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage)](https://codeclimate.com/github/codeclimate/codeclimate/test_coverage)
+[![Build Status](https://travis-ci.org/dnuwa/maintenance_tracker.svg?branch=master)](https://travis-ci.org/dnuwa/maintenance_tracker)[![Coverage Status](https://coveralls.io/repos/github/dnuwa/maintenance_tracker/badge.svg?branch=master)](https://coveralls.io/github/dnuwa/maintenance_tracker?branch=master)[![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)[![Test Coverage](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage)](https://codeclimate.com/github/codeclimate/codeclimate/test_coverage)
