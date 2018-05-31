@@ -19,3 +19,5 @@ script:
 
   - python test_api.py
  
+ after_success:
+  - coveralls
