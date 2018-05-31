@@ -15,6 +15,12 @@ class TestUserService(BaseTestCase):
         #print(data)
         self.assertIn('email', data)
         self.assertIn('password', data)
+
+    def test_users_id(self):
+        response = self.client.post('/users')
+        data = {'item':'bmw', 'password':'53423'}
+        self.assertEqual(response.status_code, 200)
+
         
 
     def test_requests(self):
@@ -24,13 +30,12 @@ class TestUserService(BaseTestCase):
         #print(data)
         self.assertIn('item', data)
             
-    def test_requests_id(self,id):
-        response = self.client.get('api/v1/user/request/<int:id>')
-        print(response.data)
+    def test_requests_id(self):
+        response = self.client.get('/api/v1/user/request/1')
         data = json.loads(response.data)
-        print(data)
+        #print(data)
         self.assertEqual(response.status_code, 200)
-        print(data)
+        
 
 
 
