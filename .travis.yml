@@ -16,5 +16,5 @@ install:
 
 script: 
 
-  - python test_api.py
+  - python nose2
  
