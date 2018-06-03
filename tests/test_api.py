@@ -1,7 +1,13 @@
 import json
 import unittest
+import os
 
-from base import BaseTestCase
+from flask_testing import TestCase
+from api import app
+
+class BaseTestCase(TestCase):
+    def create_app(self):
+        return app
 
 class TestUserService(BaseTestCase):
     #Tests for the Users Service endpoints
