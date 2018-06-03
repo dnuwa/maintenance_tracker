@@ -13,14 +13,14 @@ install:
   - pip install python-coveralls
   - pip install -r requirements.txt
   - pip install green
-  #- pip install coverage
-  #- pip install nose
+  - pip install coverage
+  - pip install nose
   
 
 script: 
 
-  - python test_api.py
-  #- nosetests --with-coverage
+  #- python test_api.py
+  - nosetests --with-coverage
  
  after_success:
   - coveralls
