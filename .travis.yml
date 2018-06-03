@@ -19,7 +19,7 @@ install:
 
 script: 
 
-  - python test_api.py
+   #- python test_api.py
   - nosetests --with-coverage
  
  after_success:
