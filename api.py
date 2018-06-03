@@ -31,11 +31,6 @@ mainreq_request_parser.add_argument("issue_details", type=str, required=True, he
 mainreq_request_parser.add_argument("status", required=True)
 mainreq_request_parser.add_argument("id", type=int, required=True, help="Please enter valid integer as ID")
 
-# #test class
-# class HelloWorld(Resource):
-#     def get(self):
-#         return {'hello': 'world'}
-#users class
 class UserCollection(Resource):
     #method to get all users signed up
     def get(self):
@@ -81,9 +76,8 @@ class Maintenance(Resource):
             return {"error": "request not found"}
         return req
 
-#api.add_resource(HelloWorld, '/')
-api.add_resource(UserCollection, '/users')
 
+api.add_resource(UserCollection, '/users')
 api.add_resource(MaintenanceRequests, '/user/request')
 api.add_resource(Maintenance, '/user/request/<int:id>')
 
