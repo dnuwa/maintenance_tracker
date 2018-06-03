@@ -12,15 +12,12 @@ install:
   - pip install flask_restful
 
   - pip install python-coveralls
-  - pip install coverage
   - pip install -r requirements.txt
   - pip install green
 
-script:
-  
-  - nosetests --with-coverage
+script: 
+
   - python test_api.py
-  
  
-after_success:
+ after_success:
   - coveralls
