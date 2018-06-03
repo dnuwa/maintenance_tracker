@@ -1,7 +1,7 @@
 import json
 import unittest
 
-from tests.base import BaseTestCase
+from base import BaseTestCase
 
 class TestUserService(BaseTestCase):
     #Tests for the Users Service endpoints
