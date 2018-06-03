@@ -10,16 +10,17 @@ python:
 # command to install dependencies
 install:
   - pip install flask_restful
-
   - pip install python-coveralls
   - pip install -r requirements.txt
   - pip install green
+  - pip install coverage
+  - pip install nose
   
 
 script: 
 
   - python test_api.py
-  - nosetests -v --with-coverage
+  - nosetests --with-coverage
  
  after_success:
   - coveralls
