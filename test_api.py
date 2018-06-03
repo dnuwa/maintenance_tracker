@@ -1,3 +1,5 @@
+require 'coveralls'
+Coveralls.wear!
 import json
 import unittest
 
