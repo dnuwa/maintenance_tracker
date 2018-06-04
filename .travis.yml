@@ -1,26 +1,16 @@
 language: python
 
 python:
- 
-  - "2.7"
-  
-  - "3.6"
-  - "3.6-dev"  # 3.6 development branch
+ - "3.6"
   
 # command to install dependencies
 install:
-  - pip install flask_restful
-  - pip install python-coveralls
-  - pip install -r requirements.txt
-  - pip install green
-  - pip install coverage
-  - pip install nose
-  
-
+  - "pip install -r requirements.txt"
+ 
 script: 
 
   #- python test_api.py
-  - nosetests --with-coverage
+  - nosetests --with-coverage --cover-erase --cover-package=api/ && coverage repor
  
  after_success:
-  - coveralls
+  - "coveralls"

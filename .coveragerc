@@ -3,3 +3,7 @@ omit =
     */python?.?/*
     */site-packages/nose/*
     *__init__*
+    */werkzeug/*
+    */jinja2/*
+    */markupsafe/*
+    
