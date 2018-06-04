@@ -3,7 +3,8 @@ import unittest
 import os
 
 from flask_testing import TestCase
-from api import app
+from api.api import app
+
 
 class BaseTestCase(TestCase):
     def create_app(self):

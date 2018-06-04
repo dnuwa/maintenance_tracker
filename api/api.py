@@ -81,5 +81,3 @@ api.add_resource(UserCollection, '/users')
 api.add_resource(MaintenanceRequests, '/user/request')
 api.add_resource(Maintenance, '/user/request/<int:id>')
 
-if __name__ == '__main__':
-    app.run(debug=True)
